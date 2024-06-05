@@ -1,0 +1,19 @@
+{
+  "name": "proyectosistemas",
+  "version": "1.0.0",
+  "description": "Proyecto de observatorio tecnologico para la materia de \"Sistemas Distribuidos\" impartida en la UPIITA",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Mariano Peña Romero",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.3"
+  }
+}
