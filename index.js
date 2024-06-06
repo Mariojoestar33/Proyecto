@@ -19,7 +19,7 @@ app.set('trust proxy', 1) //Asignacion del proxy para la aplicacion
 
 app.get("/", async (req, res) => {
     res.render("index", {
-        pageTitle: "Observatorio Tenologico UPIITA"
+        pageTitle: "Observatorio Tecnologico UPIITA"
     })
 })
 
