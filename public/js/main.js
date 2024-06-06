@@ -33,7 +33,7 @@ function updateSidebar(markerInfo) {
     var sidebar = document.getElementById(`marker-details`)
     sidebar.innerHTML = `
         <p><strong>Nombre:</strong> ${markerInfo.name}</p>
-        <p><img class = "imagenNodo" src = "${markerInfo.imagen}"/></p>
+        <p><img class = "imagenNodo" src = "${markerInfo.imagen}" alt = "${markerInfo.id}"/></p>
         <p><strong>Coordenadas:</strong> ${markerInfo.coords.lat}, ${markerInfo.coords.lng}</p>
     `
 }
