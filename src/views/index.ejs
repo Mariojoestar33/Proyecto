@@ -2,8 +2,20 @@
 <html lang="en">
 <%- include("../layouts/head")  %>
 <body>
-    <div id="map">
+    <header>
+        <%- include('../layouts/navbar') %>
+    </header>
+    <div class="container">
+        <div id="map"></div>
+        <div id="sidebar">
+            <!-- Aquí aparecerán los datos del marcador -->
+            <h2>Detalles del Marcador</h2>
+            <div id="marker-details">
+                Selecciona un marcador para ver los detalles.
+            </div>
+        </div>
     </div>
     <script src="/js/main.js"></script>
+    <%- include('../layouts/footer', { currentYear: new Date().getFullYear() }) %>
 </body>
 </html>

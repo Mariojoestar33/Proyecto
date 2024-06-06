@@ -1,4 +1,131 @@
+/*Estilos globales*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /*background-color: #fdecda;*/
+}
+
+/*Estilos para la navbar*/
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.navbarM {
+    width: 100%;
+	max-width: 900px;
+	font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    border-top: #000000 1px solid;
+    margin-top: 25px;;
+}
+
+.div-navbar {
+    margin-top:25px;
+}
+
+.menu-horizontal {
+	list-style: none;
+	display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.menu-horizontal > li > a {
+	padding: 1em;
+	color: #000000;
+	text-decoration: none;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.menu-horizontal > li:hover {
+	background-color: rgb(218, 214, 214);
+    border-radius: 8px;
+}
+
+.menu-vertical {
+    display: none;
+    padding-left: 25px;
+    padding-right: 22.5px;
+	list-style: none;
+    margin: 0;
+	background-color: rgb(218, 214, 214);
+}
+
+.menu-horizontal li:hover .menu-vertical {
+	display: block;
+    position: absolute;
+}
+
+.menu-vertical li:hover {
+	background-color: rgb(189, 183, 183);
+}
+
+.menu-vertical li a {
+	display: block;
+	color: #000000;
+	text-decoration: none;
+}
+
+/*Estilos para el mapa*/
+
 #map {
-    height: 720px;
-    width: auto;
+    flex: 2; /* El mapa ocupará más espacio */
+    background-color: lightblue; /* Solo para visualización, reemplazar con el mapa real */
+    height: 100%;
+}
+
+/*Etilos para el cuerpo*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; /* Ajusta según sea necesario */
+}
+
+#sidebar {
+    flex: 1; /* La barra lateral ocupará menos espacio */
+    background-color: lightgray; /* Solo para visualización */
+    height: 100%;
+    padding: 20px; /* Ajusta según sea necesario */
+    overflow-y: auto; /* Para permitir desplazamiento si el contenido es largo */
+}
+
+/*Estilos para el footer*/
+
+.columnas {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.lista-footer {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
+
+.div-terminos {
+    text-align: center;
+    font-size: small;
+    background-color: rgb(237, 243, 243);
+}
+
+/*Estilos responsivos*/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #map, #sidebar {
+        height: 50vh; /* Ajusta según sea necesario */
+    }
 }
