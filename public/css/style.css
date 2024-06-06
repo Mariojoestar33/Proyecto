@@ -98,6 +98,11 @@ header {
     overflow-y: auto; /* Para permitir desplazamiento si el contenido es largo */
 }
 
+.imagenNodo {
+    width: 100%;
+    height: auto;
+}
+
 /*Estilos para el footer*/
 
 .columnas {

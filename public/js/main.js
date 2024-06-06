@@ -12,6 +12,9 @@ var marker = L.marker([19.51132499810658, -99.12652589999172]).addTo(map);
 // Marcador en el nodo de la UPIITA
 marker.bindPopup("Nodo Principal UPIITA").openPopup();
 
+// Definir el popup como una variable global
+var popup = L.popup();
+
 // Funcion para desplegar coordenadas al hacer click en el mapa
 function onMapClick(e) {
     popup
@@ -26,6 +29,7 @@ function updateSidebar(markerInfo) {
     var sidebar = document.getElementById('marker-details');
     sidebar.innerHTML = `
         <p><strong>Nombre:</strong> ${markerInfo.name}</p>
+        <p><img class = "imagenNodo" src = "/images/upiita.jpg"/></p>
         <p><strong>Coordenadas:</strong> ${markerInfo.coords.lat}, ${markerInfo.coords.lng}</p>
     `;
 }
