@@ -87,7 +87,7 @@ header {
 .container {
     display: flex;
     flex-direction: row;
-    height: 100vh; /* Ajusta según sea necesario */
+    height: 70vh; /* Ajusta según sea necesario */
 }
 
 #sidebar {
