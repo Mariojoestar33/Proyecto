@@ -78,13 +78,14 @@ header {
 
 #map {
     flex: 2; /* El mapa ocupará más espacio */
-    background-color: lightblue; /* Solo para visualización, reemplazar con el mapa real */
+    background-color: rgb(1, 12, 15); /* Solo para visualización, reemplazar con el mapa real */
     height: 100%;
 }
 
 /*Etilos para el cuerpo*/
 
 .container {
+    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     height: 70vh; /* Ajusta según sea necesario */
@@ -92,7 +93,7 @@ header {
 
 #sidebar {
     flex: 1; /* La barra lateral ocupará menos espacio */
-    background-color: lightgray; /* Solo para visualización */
+    background-color: rgb(255, 255, 255); /* Solo para visualización */
     height: 100%;
     padding: 20px; /* Ajusta según sea necesario */
     overflow-y: auto; /* Para permitir desplazamiento si el contenido es largo */
@@ -129,7 +130,6 @@ header {
     .container {
         flex-direction: column;
     }
-
     #map, #sidebar {
         height: 50vh; /* Ajusta según sea necesario */
     }
