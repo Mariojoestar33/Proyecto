@@ -80,6 +80,8 @@ header {
     flex: 2; /* El mapa ocupará más espacio */
     background-color: rgb(1, 12, 15); /* Solo para visualización, reemplazar con el mapa real */
     height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /*Etilos para el cuerpo*/
@@ -89,6 +91,7 @@ header {
     display: flex;
     flex-direction: row;
     height: 70vh; /* Ajusta según sea necesario */
+    margin: 20px;
 }
 
 #sidebar {
@@ -97,11 +100,22 @@ header {
     height: 100%;
     padding: 20px; /* Ajusta según sea necesario */
     overflow-y: auto; /* Para permitir desplazamiento si el contenido es largo */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .imagenNodo {
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
     width: 420px;
     height: 250px;
+    border-radius: 20px;
+}
+
+.imagenNodo:hover {
+    transform: scale(1.07);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 /*Estilos para CONOCENOS*/
