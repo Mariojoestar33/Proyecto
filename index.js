@@ -23,6 +23,12 @@ app.get("/", async (req, res) => {
     })
 })
 
+app.get("/conocenos", async (req, res) => {
+    res.render("conocenos", {
+        pageTitle: "Conocenos"
+    })
+})
+
 app.listen(config.PORT, () => {
     console.log(`Aplicacion corriendo en el puerto ${config.PORT}`)
 })

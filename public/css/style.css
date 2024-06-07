@@ -46,7 +46,7 @@ header {
 }
 
 .menu-horizontal > li:hover {
-	background-color: rgb(218, 214, 214);
+	background-color: rgb(149, 149, 149);
     border-radius: 8px;
 }
 
@@ -100,8 +100,28 @@ header {
 }
 
 .imagenNodo {
-    width: 100%;
-    height: auto;
+    width: 420px;
+    height: 250px;
+}
+
+/*Estilos para CONOCENOS*/
+
+.textoConocenos {
+    text-align: center;
+    font-size: 20px;
+}
+
+.imagenConocenos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.imagenConocenos img {
+    display: block; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /*Estilos para el footer*/
